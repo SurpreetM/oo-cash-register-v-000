@@ -1,7 +1,7 @@
 require 'pry'
 class CashRegister
 
-  attr_accessor :discount, :total, :last_transaction
+  attr_accessor :discount, :total, :last_transaction, :items
 
   def initialize(discount = 0)
 
@@ -31,7 +31,7 @@ class CashRegister
   end
 
   def items
-    @items
+    self.items
   end
 
 
