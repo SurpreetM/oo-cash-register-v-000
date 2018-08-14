@@ -4,8 +4,9 @@ class CashRegister
   attr_accessor :discount, :total
 
   def initialize(discount = 0)
-    binding.pry
+
     @discount = discount
+    binding.pry
     @total = 0
   end
 
