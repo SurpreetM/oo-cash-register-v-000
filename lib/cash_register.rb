@@ -7,14 +7,14 @@ class CashRegister
 
     @discount = discount
     @total = 0
-    @@items = []
+    @items = []
 
   end
 
   def add_item(title, price, quantity = 1)
     self.total += price * quantity
     quantity.times do
-      @@items << title
+      @items << title
     end
   end
 
@@ -30,7 +30,9 @@ class CashRegister
   end
 
   def items
-    @@items
+    @items
   end
+
+
 
 end
